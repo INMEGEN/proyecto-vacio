@@ -1,0 +1,9 @@
+objetivo-final:	prerequisito1	prerequisitos
+	mkdir -p `dirname $prereq`
+	comando > $prereq'.build' \
+	&& mv $prereq'.build' $prereq
+
+prerequisito1:	prerequisitos-del-prerequisito
+	mkdir -p `dirname $prereq`
+	comando > $prereq'.build' \
+	&& mv $prereq'.build' $prereq

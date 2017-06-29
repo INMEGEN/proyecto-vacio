@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Por cada archivo [de este tipo (p.e. bam)] en `data/`,
+# generar uno [con estas características] en `results/`.
+
+find -L data \
+	-type f \
+	-name '*.bam' \
+sed -r \
+	-e 's#^data/#results/#' \
+	-e 's#\.bam#.vcf#'
