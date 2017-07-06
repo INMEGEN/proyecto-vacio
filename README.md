@@ -1,5 +1,7 @@
-% [Nombre del proyecto]
-% Responsable:
+---
+title: "Nombre del proyecto"
+author: "Responsable"
+---
 
 El objetivo del proyecto es [...]
 
